@@ -1,0 +1,27 @@
+<div class="container">
+    <div>
+        Search:
+        <input type="text" ng-model='search'>
+        <span ng-bind='search'></span> Sort by:
+        <select ng-model="orderProp">
+            <option value="name">Alphabetical</option>
+            <option value="age">Newest</option>
+        </select>
+    </div>
+    <div>
+        <h2>手机数量为:{{phones.length}}</h2>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="phone in phones | filter:search | orderBy:orderProp">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#/phones/{{phone.id}}"><img class="img-responsive" ng-src="{{phone.imageUrl}}" alt=""></a>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>{{phone.carrier}}</h3>
+                        <h4>{{phone.id}}</h4>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
