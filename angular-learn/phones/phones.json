@@ -130,7 +130,7 @@
         "imageUrl": "img/phones/sanyo-zio.0.jpg", 
         "name": "SANYO ZIO", 
         "snippet": "The Sanyo Zio by Kyocera is an Android smartphone with a combination of ultra-sleek styling, strong performance and unprecedented value."
-    }/*, 
+    }, 
     {
         "age": 17, 
         "id": "samsung-transform", 
@@ -151,5 +151,5 @@
         "imageUrl": "img/phones/motorola-charm-with-motoblur.0.jpg", 
         "name": "Motorola CHARM\u2122 with MOTOBLUR\u2122", 
         "snippet": "Motorola CHARM fits easily in your pocket or palm.  Includes MOTOBLUR service."
-    }*/
+    }
 ]
