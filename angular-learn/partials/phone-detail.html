@@ -3,9 +3,9 @@
     <h1>{{phone.name}}</h1>
     <p>{{phone.description}}</p>
     <button ng-click='sayHello()'>sayHello</button>
-    <ul class="phone-thumbs list-group">
-        <li ng-repeat="img in phone.images" class="list-group-item">
-            <img ng-src="{{img}}" ng-click="setImage(img)" />
+    <ul class="phone-thumbs list-group row">
+        <li ng-repeat="img in phone.images" class="list-group-item col-md-2">
+            <img ng-src="{{img}}" ng-click="setImage(img)" class="img-responsive" />
         </li>
     </ul>
     <ul class="specs list-group">
@@ -14,12 +14,13 @@
             <dl>
                 <dt>Availability</dt>
                 <dd ng-repeat="availability in phone.availability">{{availability}}</dd>
-            </dl>
-            <dl>
                 <dt>Infrared</dt>
                 <dd>{{phone.connectivity.infrared | checkmark}}</dd>
                 <dt>GPS</dt>
                 <dd>{{phone.connectivity.gps | checkmark}}</dd>
+            </dl>
+            <dl>
+                
             </dl>
         </li>
     </ul>
